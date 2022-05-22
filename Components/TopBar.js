@@ -16,14 +16,12 @@ const TopBar = ({ handleAdd }) => {
 
   return (
     <View style={styles.topContainer}>
-      <View>
-        <TextInput
-          style={styles.input}
-          placeholder="Agregar tarea..."
-          onChangeText={setInput}
-          value={input}
-        />
-      </View>
+      <TextInput
+        style={styles.input}
+        placeholder="Agregar tarea..."
+        onChangeText={setInput}
+        value={input}
+      />
       <View>
         <MyButton onPress={() => handleAddAux()}>
           <Ionicons name="add" size={24} color={colors.white} />
@@ -53,8 +51,8 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    width: 270,
-    padding: 12,
+    width: "80%",
+    padding: 10,
     fontSize: 20,
     color: colors.primary,
   },

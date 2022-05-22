@@ -72,12 +72,12 @@ export default Layout;
 
 const styles = StyleSheet.create({
   container: {
-    padding: 25,
+    padding: 10,
     justifyContent: "space-around",
     alignItems: "center",
   },
   title: {
-    marginTop: 30,
+    marginTop: 80,
     fontSize: 20,
     fontWeight: "bold",
     color: colors.primary,

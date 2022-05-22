@@ -1,11 +1,11 @@
-import { StyleSheet, Text, TouchableOpacity } from "react-native";
+import { StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 import { colors } from "../GlobalStyles/Colors";
 
 const MyButton = ({ onPress, children }) => {
   return (
     <TouchableOpacity style={styles.button} onPress={onPress}>
-      <Text style={styles.text}>{children}</Text>
+      {children}
     </TouchableOpacity>
   );
 };
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderColor: colors.blue,
     width: "auto",
+    justifyContent: "center",
     alignItems: "center",
   },
   text: {

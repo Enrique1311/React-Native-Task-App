@@ -1,4 +1,4 @@
-import { Modal, StyleSheet, TextInput, View, Text } from "react-native";
+import { Modal, StyleSheet, TextInput, View } from "react-native";
 import { colors } from "../GlobalStyles/Colors";
 import MyButton from "../Components/MyButton";
 import { Ionicons } from "@expo/vector-icons";
@@ -25,13 +25,11 @@ const MyModal = ({
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
           <View style={styles.editContainer}>
-            <View>
-              <TextInput
-                style={styles.input}
-                onChangeText={handleEdit}
-                value={taskSelected.task}
-              />
-            </View>
+            <TextInput
+              style={styles.input}
+              onChangeText={handleEdit}
+              value={taskSelected.task}
+            />
             <View>
               <MyButton onPress={() => setModalVisibility(false)}>
                 <FontAwesome5 name="edit" size={20} color={colors.white} />
@@ -69,7 +67,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   modalContent: {
-    backgroundColor: colors.light,
+    backgroundColor: colors.white,
     height: 200,
     width: "95%",
     borderRadius: 10,
@@ -98,7 +96,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.light,
   },
   input: {
-    width: 270,
+    width: "80%",
     padding: 10,
     fontSize: 20,
     marginRight: 10,
