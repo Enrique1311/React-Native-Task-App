@@ -33,10 +33,8 @@ const styles = StyleSheet.create({
     padding: 5,
     marginBottom: 5,
     borderRadius: 7,
-    borderLeftWidth: 5,
-    borderBottomWidth: 5,
-    borderRightWidth: 1,
-    borderTopWidth: 1,
+
+    borderWidth: 1,
     borderColor: colors.blue,
   },
   text: {
