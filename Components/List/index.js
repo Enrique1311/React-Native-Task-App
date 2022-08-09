@@ -26,14 +26,12 @@ export default List;
 
 const styles = StyleSheet.create({
   itemList: {
-    backgroundColor: colors.white,
+    backgroundColor: colors.light,
     width: "100%",
     height: "75%",
     borderRadius: 10,
     padding: 5,
     marginVertical: 10,
-    borderWidth: 1,
-    borderColor: colors.blue,
   },
   text: {
     fontSize: 18,

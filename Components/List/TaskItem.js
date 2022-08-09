@@ -30,16 +30,14 @@ const styles = StyleSheet.create({
   itemContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 5,
+    padding: 10,
     marginBottom: 5,
+    backgroundColor: colors.white,
     borderRadius: 7,
-
-    borderWidth: 1,
-    borderColor: colors.blue,
   },
   text: {
     color: colors.primary,
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "bold",
     width: 280,
   },

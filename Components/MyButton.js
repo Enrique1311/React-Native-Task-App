@@ -15,16 +15,10 @@ export default MyButton;
 const styles = StyleSheet.create({
   button: {
     backgroundColor: colors.terciary,
-    paddingHorizontal: 8,
-    paddingVertical: 5,
-    margin: 5,
+    padding: 10,
     borderRadius: 10,
     width: "auto",
     justifyContent: "center",
     alignItems: "center",
-  },
-  text: {
-    color: colors.white,
-    fontSize: 20,
   },
 });

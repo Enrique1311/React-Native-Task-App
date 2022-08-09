@@ -24,7 +24,7 @@ const TopBar = ({ handleAdd }) => {
       />
       <View>
         <MyButton onPress={() => handleAddAux()}>
-          <Ionicons name="add" size={24} color={colors.white} />
+          <Ionicons name="add" size={26} color={colors.white} />
         </MyButton>
       </View>
     </View>
@@ -40,16 +40,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: "auto",
     width: "100%",
+    padding: 5,
     marginVertical: 40,
     borderRadius: 10,
-    borderWidth: 1,
-    borderColor: colors.blue,
     backgroundColor: colors.light,
   },
 
   input: {
+    marginLeft: 5,
     width: "80%",
-    padding: 10,
     fontSize: 20,
     color: colors.primary,
   },
